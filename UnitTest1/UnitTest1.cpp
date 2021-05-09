@@ -12,65 +12,19 @@ namespace UnitTest1
 	TEST_CLASS(UnitTest1)
 	{
 	public:
-		// a value is same as for 1 
 		
-		string a = ".----";
-		string b = "..---";
-		string c = "...--";
-		string d = "....-";
-		string e = ".....";
-		string f = "-....";
-		string g = "--...";
-		string h = "---..";
-		string i = "----.";
-		string j = "-----";
-		TEST_METHOD(porownaj1)
+		TEST_METHOD(is_max) //sprawdzenie czy liczba z przedzia³u -5=< x =<5 jest max
 		{
-			Assert::AreEqual(morseCode("1"), a);
+			Assert::AreEqual(max, 5);
 		}
-		TEST_METHOD(porownaj2)
+		TEST_METHOD(is_min)//sprawdzenie czy liczba z przedzia³u -5=< x =<5 jest min
 		{
-			Assert::AreEqual(morseCode("2"), b);
+			Assert::AreEqual(min, -5);
 		}
-		TEST_METHOD(porownaj3)
+		TEST_METHOD(is_positive) //sprawdzenie czy wybrana liczba z przedzia³u -5=< x =<5 jest dodatnia ( wiêksza od 0)
 		{
-			Assert::AreEqual(morseCode("3"), c);
+			Assert::IsTrue(positive(x), true);
 		}
-		TEST_METHOD(porownaj4)
-		{
-			Assert::AreEqual(morseCode("4"), d);
-		}
-		TEST_METHOD(porownaj5)
-		{
-			Assert::AreEqual(morseCode("5"), e);
-		}
-		TEST_METHOD(porownaj6)
-		{
-			Assert::AreEqual(morseCode("6"), f);
-		}
-		TEST_METHOD(porownaj7)
-		{
-			Assert::AreEqual(morseCode("7"), g);
-		}
-		TEST_METHOD(porownaj8)
-		{
-			Assert::AreEqual(morseCode("8"), h);
-		}
-		TEST_METHOD(porownaj9)
-		{
-			Assert::AreEqual(morseCode("9"), i);
-		}
-		TEST_METHOD(porownaj0)
-		{
-			Assert::AreEqual(morseCode("0"), j);
-		}
-		TEST_METHOD(porownajkombinacja)
-		{
-			Assert::AreEqual(morseCode("42"),d+b);
-		}
-		TEST_METHOD(zlyznak)
-		{
-		Assert::AreEqual(morseCode("u"),b); // wywo³anie b³êdu - obs³uga znaku z poza zakresu
-		}
+		
 	};
 }
