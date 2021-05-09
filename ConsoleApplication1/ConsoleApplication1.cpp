@@ -11,8 +11,8 @@ string morseEncode(char x)
 	// image attached in the article
 	switch (x) {
 	
-	case '1':
-		return ".----";
+	//case '1':
+	//	return ".----";
 	case '2':
 		return "..---";
 	case '3':
@@ -59,3 +59,5 @@ int main()
 	morseCode(s);
 	return 0;
 }
+//sfsdfsfsbf/sfsf/sfds/fsdfs/fsfs
+//vsdfbdf
