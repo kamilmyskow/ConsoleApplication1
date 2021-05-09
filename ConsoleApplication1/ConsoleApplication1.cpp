@@ -7,7 +7,7 @@ using namespace std;
 string morseEncode(char x)
 {
 
-	// refer to the Morse table
+	// refer to the Morse table andapoj dfj  lijj ij lih ln n
 	// image attached in the article
 	switch (x) {
 	
