@@ -13,13 +13,13 @@ namespace UnitTest1
 	{
 	public:
 		
-		TEST_METHOD(is_max) //sprawdzenie czy liczba z przedzia³u -5=< x =<5 jest max
+		TEST_METHOD(is_max) //sprawdzenie czy liczba z przedzia³u -1=< x =<1 jest max
 		{
-			Assert::AreEqual(max, 5);
+			Assert::AreEqual(max(-1,1,0), 1);
 		}
 		TEST_METHOD(is_min)//sprawdzenie czy liczba z przedzia³u -5=< x =<5 jest min
 		{
-			Assert::AreEqual(min, -5);
+			Assert::AreEqual(minimum, -1);
 		}
 		TEST_METHOD(is_positive) //sprawdzenie czy wybrana liczba z przedzia³u -5=< x =<5 jest dodatnia ( wiêksza od 0)
 		{
