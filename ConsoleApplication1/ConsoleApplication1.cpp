@@ -17,10 +17,35 @@ int max (int a,int b,int c)
 
 }
 
+int min(int a, int b, int c)
+{
+	int minimum;
+	if (a < b) minimum = a;
+	if (a < c) minimum = a;
+	if (a > b) minimum = b;
+	if (a > c) minimum = c;
+	if (b < c) minimum = b;
+	if (c < b) minimum = c;
+
+	return minimum;
+
+}
+
+
+bool positive(int x) {
+	
+	if (x > 0)
+		return true;
+	else
+		return false;
+}
+
+
+
 int main()
 {
-	cout << max(-1, 0, 1);
-
-
+	cout << max(-1, 0, 1)<<endl;
+	cout << min(-1, 0, 1) << endl;
+	cout << positive(5) << endl;
 	return 0;
 }
